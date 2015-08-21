@@ -1,14 +1,14 @@
 /* 
 
-   Programa que cifra/descifra palabras en función 
-   de su valor y de la funcion y=x^2
+   Programa que cifra palabras en funciÃ³n 
+   de su valor asignado y de la funcion y=x^2.
 
    Estructura:
-              1. Asociación de letra a su número
+              1. AsociaciÃ³n de letra a su nÃºmero
               2. Interfaz
-              3. Codificación
-              4. Resultado de la codificación en pantalla
-              5. Opción de crear un .txt con el mensaje codificado//Todavia en desarrollo
+              3. CodificaciÃ³n
+              4. Resultado de la codificaciÃ³n en pantalla
+              5. OpciÃ³n de crear un .txt con el mensaje codificado
            
 */
 
@@ -21,7 +21,7 @@ using namespace std;
 int main();
 
 
-# 1. Asociación de cada letra con un numero y variables
+# 1. AsociaciÃ³n de cada letra con un numero y variables
 
 int a=1;
 int b=2;
@@ -60,10 +60,10 @@ int archivo;
 # 2. Interfaz
 
 cout << "Introduzca el texto a codificar"endl;
-cin >> texto;
+getline( cin, texto );
 
 
-#Codificación
+#CodificaciÃ³n
 
 nLetras = sizeof(texto);
 
@@ -73,10 +73,10 @@ do{
            
 }while(texto=>0);
 
-#Opción de sacar el codigo resultante en un .txt
+#OpciÃ³n de sacar el codigo resultante en un .txt
 
-cout << "¿Desea transferir el codigo resultante a un archivo .txt?: " << endl;
-cout << "1. Sí" << endl;
+cout << "Â¿Desea transferir el codigo resultante a un archivo .txt?: " << endl;
+cout << "1. SÃ­" << endl;
 cout << "2. No" << endl;
 
 cin >> archivo;
