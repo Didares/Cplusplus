@@ -50,22 +50,19 @@ int x=24;
 int y=25;
 int z=26;
 
-int nLetras;
-
-char texto[];
-char codigo[];
+char texto;
+char codigo
 
 int archivo;
 
 # 2. Interfaz
 
-cout << "Introduzca el texto a codificar"endl;
+cout << "Introduzca el texto a codificar" << endl;
 getline( cin, texto );
 
+getch();
 
 #Codificación
-
-nLetras = sizeof(texto);
 
 do{
         codigo = (texto[-1++1])^2;
@@ -91,7 +88,7 @@ if(archivo=1){
 }else{
       return 0;
 }
-
+return 0;
 }
 
 
